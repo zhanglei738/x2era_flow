@@ -1,21 +1,15 @@
 package com.x2era.flow.controller;
 
-import com.google.common.collect.Maps;
-import com.x2era.flow.api.AzkabanApi;
 import com.x2era.flow.api.impl.AzkabanApiImp;
 import com.x2era.flow.bean.AzkabanBean;
 import com.x2era.flow.common.RestResult;
 import lombok.extern.slf4j.Slf4j;
 import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**
