@@ -38,18 +38,18 @@ public class FlowerController {
          Map<String,String> map = new HashMap<>();
          //登陆
         JSONObject jo = null;
-        try {
-            jo = azkabanApi.login();
-        } catch (Exception e) {
-            log.error("登陆失败,具体原因:{}",e.getMessage());
-        }
-        String status = jo.getString("status");
-        String sessionId = jo.getString("session.id");
-        map.put("sessionId",jo.getString("session.id"));
-        map.put("project",azkaban.getProjectName());
+
+        // String status = jo.getString("status");
+        // String sessionId = jo.getString("session.id");
+        // map.put("sessionId",jo.getString("session.id"));
+        // map.put("project",azkaban.getProjectName());
         map.put("flow",azkaban.getFlow());
-        azkabanApi.fetchEXEaFlow(map);
-        return  RestResult.ok();
+        try {
+            jo = azkabanApi.fetchFlow(map);
+        } catch (Exception e) {
+            log.info("流程执行失败:"+e.getMessage(),e);
+        }
+        return  RestResult.ok(jo.get("status").toString());
     }
 
 

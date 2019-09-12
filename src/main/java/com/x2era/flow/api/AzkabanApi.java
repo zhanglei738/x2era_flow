@@ -19,12 +19,31 @@ public interface AzkabanApi {
     /**
      *
      * */
-    JSONObject login() throws  Exception;
+    String login(Integer env) ;
 
     /***
-     * 流程执行API
+     * 流程执行一个flow
      */
     JSONObject fetchEXEaFlow(Map<String,String> map);
+
+    /***
+     * 获取flow 信息
+     *
+     */
+     JSONObject fetchFlowInfo(Map<String,String> map);
+
+    /***
+     *
+     * 获取flow log
+     */
+    JSONObject fetchFlowLog(Map<String,String> map);
+
+    /***
+     * 执行流程
+     */
+    JSONObject fetchFlow(Map<String,String> map) throws Exception;
+
+
 
 
 
