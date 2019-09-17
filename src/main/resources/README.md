@@ -35,6 +35,18 @@ web接口调用Azkaban的API
   c.告警数据返回,短信  or 电话告警
   
   
+  monitor bean 设计
+  字段	                      释义	                        备注
+  status 	         monitor监控结果/status /fail	
+  
+  table_name              监控具体的表名	
+  
+  count_num	                校验结果	
+  
+  monitor_time	              日期	
+
+  
+  
   
   
             
