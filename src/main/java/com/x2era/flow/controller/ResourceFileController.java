@@ -4,6 +4,8 @@ import com.alibaba.fastjson.JSONObject;
 import com.x2era.flow.bean.ResourceFile;
 import com.x2era.flow.bean.User;
 import com.x2era.flow.service.IResourceFileService;
+import com.x2era.flow.utils.DateUtils;
+import com.x2era.flow.utils.RuntimeUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -55,9 +57,13 @@ public class ResourceFileController {
         // 存放在这个路径下：该路径是该工程目录下的static文件下：(注：该文件可能需要自己创建)
         // 放在static下的原因是，存放的是静态文件资源，即通过浏览器输入本地服务器地址，加文件名时是可以访问到的
 
-        String filePath = ClassUtils.getDefaultClassLoader().getResource("").getPath()+"static/upload/";
-        System.out.println(filePath);
+        //String filePath = ClassUtils.getDefaultClassLoader().getResource("").getPath()+"static/upload/";
+        String filePath = "/data/dpdata/";
+        String absoPath = filePath + fileName;
+        String hiveLoadFile = absoPath.replace(".zip","");
         File file = new File(filePath + fileName);
+        //String command = "cd /data/dpdata;"+"unzip "+absoPath;
+        //String hiveLoad = "hive -e \"LOAD DATA LOCAL INPATH '"+hiveLoadFile+"' INTO TABLE xxzy.ods_dzdp_base_w partition (weekid='"+ DateUtils.getWeekOfMonth() +"')\"";
         try {
             resourceName.transferTo(file);
             resourceFile.setResourceName(fileName);
@@ -66,7 +72,10 @@ public class ResourceFileController {
             resourceFile.setOnloadUser(onloadUser.getUserName());
             LOGGER.info("上传成功");
             resourcefileService.insert(resourceFile);
-            return "上传成功";
+
+            RuntimeUtils.callScript(hiveLoadFile,DateUtils.getWeekOfMonth(),"zipandload.sh",absoPath,"/data/job/dptohdfs");
+
+            return "上传hdfs成功";
         } catch (IOException e) {
             LOGGER.error(e.toString(), e);
         }

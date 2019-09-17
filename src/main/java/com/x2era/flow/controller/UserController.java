@@ -17,10 +17,14 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 @Controller
-@RequestMapping("/")
 public class UserController {
     @Resource
     private IUserService iUserService;
+
+    @RequestMapping("/")
+    public String first() {
+        return "admin/login";
+    }
 
     @RequestMapping("/index")
     public String index() {

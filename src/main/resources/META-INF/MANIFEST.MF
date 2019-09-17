@@ -1,0 +1,102 @@
+Manifest-Version: 1.0
+Class-Path: libs/spring-oxm-5.1.9.RELEASE.jar libs/hadoop-yarn-common-
+ 2.7.1.jar libs/spring-data-commons-2.1.10.RELEASE.jar libs/hadoop-yar
+ n-client-2.7.1.jar libs/spring-web-5.1.9.RELEASE.jar libs/gson-2.8.5.
+ jar libs/logback-core-1.2.3.jar libs/jsr305-3.0.0.jar libs/servlet-ap
+ i-2.5.jar libs/rank-eval-client-6.4.3.jar libs/tools.jar libs/jopt-si
+ mple-5.0.2.jar libs/hadoop-yarn-server-common-2.7.1.jar libs/spring-d
+ ata-redis-2.1.10.RELEASE.jar libs/spring-boot-starter-websocket-2.1.8
+ .RELEASE.jar libs/elasticsearch-core-6.4.3.jar libs/spring-boot-confi
+ guration-processor-2.1.8.RELEASE.jar libs/spring-messaging-5.1.9.RELE
+ ASE.jar libs/zookeeper-3.4.6.jar libs/lang-mustache-client-6.4.3.jar 
+ libs/parent-join-client-6.4.3.jar libs/lucene-sandbox-7.4.0.jar libs/
+ jackson-datatype-jdk8-2.9.9.jar libs/spring-data-keyvalue-2.1.10.RELE
+ ASE.jar libs/xercesImpl-2.9.1.jar libs/freemarker-2.3.29.jar libs/jav
+ ax.activation-api-1.2.0.jar libs/api-util-1.0.0-M20.jar libs/spring-a
+ op-5.1.9.RELEASE.jar libs/lucene-spatial3d-7.4.0.jar libs/hadoop-mapr
+ educe-client-core-2.7.1.jar libs/jackson-core-2.9.9.jar libs/log4j-ap
+ i-2.11.2.jar libs/spring-boot-starter-json-2.1.8.RELEASE.jar libs/ani
+ mal-sniffer-annotations-1.18.jar libs/jettison-1.1.jar libs/ezmorph-1
+ .0.6.jar libs/elasticsearch-cli-6.4.3.jar libs/hadoop-client-2.7.1.ja
+ r libs/commons-configuration-1.6.jar libs/transport-6.4.3.jar libs/sp
+ ring-tx-5.1.9.RELEASE.jar libs/javax.annotation-api-1.3.2.jar libs/je
+ rsey-server-1.9.jar libs/lucene-queries-7.4.0.jar libs/javax.inject-1
+ .jar libs/snakeyaml-1.23.jar libs/fastjson-1.2.47.jar libs/elasticsea
+ rch-secure-sm-6.4.3.jar libs/spring-boot-starter-logging-2.1.8.RELEAS
+ E.jar libs/netty-codec-http-4.1.39.Final.jar libs/hibernate-validator
+ -6.0.17.Final.jar libs/hadoop-mapreduce-client-shuffle-2.7.1.jar libs
+ /netty-codec-4.1.39.Final.jar libs/lucene-backward-codecs-7.4.0.jar l
+ ibs/spring-boot-starter-2.1.8.RELEASE.jar libs/lucene-queryparser-7.4
+ .0.jar libs/mybatis-3.5.1.jar libs/jackson-dataformat-yaml-2.9.9.jar 
+ libs/apacheds-i18n-2.0.0-M15.jar libs/spring-boot-starter-tomcat-2.1.
+ 8.RELEASE.jar libs/jul-to-slf4j-1.7.28.jar libs/jackson-dataformat-cb
+ or-2.9.9.jar libs/htrace-core-3.1.0-incubating.jar libs/commons-beanu
+ tils-core-1.8.0.jar libs/spring-boot-2.1.8.RELEASE.jar libs/avro-1.7.
+ 4.jar libs/hadoop-mapreduce-client-jobclient-2.7.1.jar libs/guava-28.
+ 1-jre.jar libs/commons-lang-2.5.jar libs/json-lib-2.4-jdk15.jar libs/
+ spring-boot-starter-data-elasticsearch-2.1.8.RELEASE.jar libs/listena
+ blefuture-9999.0-empty-to-avoid-conflict-with-guava.jar libs/json-201
+ 71018.jar libs/jaxb-api-2.3.1.jar libs/spring-webmvc-5.1.9.RELEASE.ja
+ r libs/mybatis-spring-boot-autoconfigure-2.0.1.jar libs/spring-websoc
+ ket-5.1.9.RELEASE.jar libs/xz-1.0.jar libs/elasticsearch-rest-client-
+ 6.4.3.jar libs/jsp-api-2.1.jar libs/pagehelper-5.1.4.jar libs/hadoop-
+ common-2.7.1.jar libs/joda-time-2.10.3.jar libs/hadoop-auth-2.7.1.jar
+  libs/spring-boot-starter-validation-2.1.8.RELEASE.jar libs/netty-tra
+ nsport-4.1.39.Final.jar libs/jackson-mapper-asl-1.9.13.jar libs/commo
+ ns-logging-1.1.3.jar libs/commons-codec-1.11.jar libs/transport-netty
+ 4-client-6.4.3.jar libs/netty-common-4.1.39.Final.jar libs/lombok-1.1
+ 8.8.jar libs/spring-boot-starter-jdbc-2.1.8.RELEASE.jar libs/jersey-c
+ ore-1.9.jar libs/guice-3.0.jar libs/checker-qual-2.8.1.jar libs/jna-4
+ .5.1.jar libs/commons-httpclient-3.1.jar libs/hadoop-yarn-api-2.7.1.j
+ ar libs/httpasyncclient-4.1.4.jar libs/spring-context-5.1.9.RELEASE.j
+ ar libs/jackson-xc-1.8.3.jar libs/commons-daemon-1.0.13.jar libs/jack
+ son-dataformat-smile-2.9.9.jar libs/lettuce-core-5.1.8.RELEASE.jar li
+ bs/commons-digester-1.8.jar libs/jetty-6.1.26.jar libs/lucene-highlig
+ hter-7.4.0.jar libs/netty-resolver-4.1.39.Final.jar libs/hadoop-annot
+ ations-2.7.1.jar libs/HdrHistogram-2.1.9.jar libs/log4j-to-slf4j-2.11
+ .2.jar libs/spring-jdbc-5.1.9.RELEASE.jar libs/compiler-0.9.3.jar lib
+ s/lucene-suggest-7.4.0.jar libs/jsch-0.1.42.jar libs/httpclient-4.5.9
+ .jar libs/mysql-connector-java-8.0.17.jar libs/commons-net-3.1.jar li
+ bs/commons-math3-3.1.1.jar libs/mybatis-spring-boot-starter-2.0.1.jar
+  libs/tomcat-embed-websocket-9.0.24.jar libs/elasticsearch-6.4.3.jar 
+ libs/netty-3.6.2.Final.jar libs/slf4j-api-1.7.28.jar libs/commons-com
+ press-1.4.1.jar libs/lucene-spatial-7.4.0.jar libs/api-asn1-api-1.0.0
+ -M20.jar libs/lucene-misc-7.4.0.jar libs/jackson-core-asl-1.9.13.jar 
+ libs/java-xmlbuilder-0.4.jar libs/snappy-java-1.0.4.1.jar libs/httpco
+ re-4.4.12.jar libs/validation-api-2.0.1.Final.jar libs/jboss-logging-
+ 3.3.3.Final.jar libs/commons-cli-1.2.jar libs/t-digest-3.2.jar libs/a
+ pacheds-kerberos-codec-2.0.0-M15.jar libs/guice-servlet-3.0.jar libs/
+ spring-data-elasticsearch-3.1.10.RELEASE.jar libs/curator-client-2.7.
+ 1.jar libs/netty-buffer-4.1.39.Final.jar libs/jets3t-0.9.0.jar libs/j
+ axb-impl-2.2.3-1.jar libs/spring-boot-devtools-2.1.8.RELEASE.jar libs
+ /lucene-analyzers-common-7.4.0.jar libs/lucene-spatial-extras-7.4.0.j
+ ar libs/classmate-1.4.0.jar libs/hppc-0.7.1.jar libs/paranamer-2.3.ja
+ r libs/tomcat-embed-core-9.0.24.jar libs/jackson-jaxrs-1.8.3.jar libs
+ /netty-handler-4.1.39.Final.jar libs/mybatis-spring-2.0.1.jar libs/fa
+ ilureaccess-1.0.1.jar libs/jersey-guice-1.9.jar libs/j2objc-annotatio
+ ns-1.3.jar libs/commons-beanutils-1.9.2.jar libs/hadoop-mapreduce-cli
+ ent-common-2.7.1.jar libs/aopalliance-1.0.jar libs/spring-boot-autoco
+ nfigure-2.1.8.RELEASE.jar libs/spring-context-support-5.1.9.RELEASE.j
+ ar libs/elasticsearch-x-content-6.4.3.jar libs/httpcore-nio-4.4.12.ja
+ r libs/xmlenc-0.52.jar libs/spring-boot-starter-data-redis-2.1.8.RELE
+ ASE.jar libs/lucene-core-7.4.0.jar libs/spring-expression-5.1.9.RELEA
+ SE.jar libs/spring-boot-starter-web-2.1.8.RELEASE.jar libs/hadoop-hdf
+ s-2.7.1.jar libs/reactor-core-3.2.12.RELEASE.jar libs/commons-collect
+ ions-3.2.1.jar libs/curator-framework-2.7.1.jar libs/jetty-util-6.1.2
+ 6.jar libs/xml-apis-1.4.01.jar libs/jsqlparser-1.0.jar libs/protobuf-
+ java-2.5.0.jar libs/netty-all-4.1.39.Final.jar libs/jackson-annotatio
+ ns-2.9.0.jar libs/leveldbjni-all-1.8.jar libs/error_prone_annotations
+ -2.3.2.jar libs/lucene-memory-7.4.0.jar libs/HikariCP-3.2.0.jar libs/
+ jersey-client-1.9.jar libs/spring-jcl-5.1.9.RELEASE.jar libs/spring-c
+ ore-5.1.9.RELEASE.jar libs/asm-3.1.jar libs/log4j-1.2.17.jar libs/jac
+ kson-module-parameter-names-2.9.9.jar libs/jackson-datatype-jsr310-2.
+ 9.9.jar libs/reactive-streams-1.0.3.jar libs/reindex-client-6.4.3.jar
+  libs/tomcat-embed-el-9.0.24.jar libs/hadoop-mapreduce-client-app-2.7
+ .1.jar libs/logback-classic-1.2.3.jar libs/curator-recipes-2.7.1.jar 
+ libs/slf4j-log4j12-1.7.28.jar libs/commons-io-2.4.jar libs/spring-bea
+ ns-5.1.9.RELEASE.jar libs/spring-boot-starter-freemarker-2.1.8.RELEAS
+ E.jar libs/jackson-databind-2.9.9.3.jar libs/lucene-join-7.4.0.jar li
+ bs/percolator-client-6.4.3.jar libs/lucene-grouping-7.4.0.jar libs/je
+ rsey-json-1.9.jar
+Main-Class: com.x2era.flow.X2eraFlowApplication
+
